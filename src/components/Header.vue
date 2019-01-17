@@ -1,18 +1,21 @@
 <template>
   <header>
-    <div id="logo"></div>
+
+    <a href="#" id="logo"></a>
+
     <div class="contacts">
-      <div class="icon"></div>
+      <div class="icon phone"></div>
       <div class="contacts_text">+38 067 47 85 459<br>+38 066 47 85 459</div>
 
-      <div class="icon"></div>
-      <div class="contacts_text">+38 067 47 85 459<br>+38 066 47 85 459</div>
+      <div class="icon email"></div>
+      <div class="contacts_text">ex@gmail.com</div>
 
-      <div class="icon"></div>
-      <div class="contacts_text">+38 067 47 85 459<br>+38 066 47 85 459</div>
+      <div class="icon address"></div>
+      <div class="contacts_text">Украина, г. Днепр<br>ул. Сафонова, 6</div>
     </div>
 
     <MainMenu />
+
   </header>
 </template>
 
@@ -28,11 +31,10 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss"  scoped>
   header{
-    position: absolute;
-    top:0;
-    left: 0;
+    position: relative;
     width: 100%;
     background-color: white;
+    z-index: 1;
   }
 
   #logo{
@@ -50,6 +52,8 @@
     right: 50px;
     display: inline-block;
     margin: 30px;
+    display: flex;
+    flex-wrap: nowrap;
 
 
   }
@@ -59,15 +63,25 @@
     height: 50px;
     border: 1px solid #acacac;
     margin-right: 30px;
-    background-image: url("../assets/images/phone.png");
+    margin-left: 30px;
     background-repeat: no-repeat;
-    background-size: 35px;
     background-position: center;
+  }
+  .phone{
+    background-image: url("../assets/images/phone.png");   
+    background-size: 35px;
+  }
+  .email{
+    background-image: url("../assets/images/email.png"); 
+    background-size: 35px;  
+  }
+  .address{
+    background-image: url("../assets/images/address.png");   
+    background-size: 25px;
   }
 
   .contacts_text{
-    display: inline-block;
     color: black;
-
+    margin:auto;
   }
 </style>

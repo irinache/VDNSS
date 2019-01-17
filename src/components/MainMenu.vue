@@ -49,11 +49,11 @@
   menu{
     position: absolute;
     top:80%;
-    width: 90%;
+    width: 92%;
     left: 0;
     right: 0;
     margin: auto;
-    padding: 0 5%;
+    padding: 0 4%;
     display: flex;
     flex-wrap: nowrap;
   }
