@@ -6,6 +6,7 @@
     <StatisticsBlock />
     <TasksBlock />
     <WhyWeBlock />
+    <StagesOfCoopBlock />
   </div>
 </template>
 <script>
@@ -15,6 +16,7 @@
   import StatisticsBlock from './components/StatisticsBlock.vue'
   import TasksBlock from './components/TasksBlock.vue'
   import WhyWeBlock from './components/WhyWeBlock.vue'
+  import StagesOfCoopBlock from './components/StagesOfCoopBlock.vue'
   export default {
     name: 'app',
     components: {
@@ -23,7 +25,8 @@
       ServicesBlock,
       StatisticsBlock,
       TasksBlock,
-      WhyWeBlock
+      WhyWeBlock,
+      StagesOfCoopBlock
     }
 
   }
