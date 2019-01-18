@@ -83,5 +83,6 @@
   .contacts_text{
     color: black;
     margin:auto;
+    font-family: 'Roboto', serif;
   }
 </style>

@@ -1,0 +1,95 @@
+<template>
+	<div class="block">
+		<h2>НАШИ УСЛУГИ</h2>
+		<a href="#" class="service">
+			<div class="icon"></div>
+			<h3>Системы<br>видеонаблюдения</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+		</a>
+		<a href="#" class="service">
+			<div class="icon"></div>
+			<h3>Системы контроля<br>доступа</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+		</a>
+
+		<a href="#" class="service">
+			<div class="icon"></div>
+			<h3>Проектирование и монтаж<br>компьютерных сетей</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+		</a>
+		<a href="#" class="service">
+			<div class="icon"></div>
+			<h3>Домофонные<br>cистемы</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+		</a>
+		<a href="#" class="service">
+			<div class="icon"></div>
+			<h3>Пожарные и охранные<br>сигнализации</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+		</a>
+	</div>
+</template>
+
+<script>
+	
+</script>
+
+<style lang="scss" scoped>
+
+	.service{
+		background-color: #2fc3b7;
+		display: inline-block;
+		width: 340px;
+		height: 340px;
+		margin: 0.5%;
+		text-decoration: none;
+	
+	}
+	.service:hover{
+		background-color: #5cd5cb;
+		transition: 0.3s;	
+	}
+	
+	h2:after{
+		content:" ";
+		height: 2px;
+		width:300px;
+		background-color: #b7b7b7;
+		display: block;
+		left:0;
+		right: 0;
+		margin: auto;
+		margin-top: 10px;
+	}
+
+	.icon{
+	    height: 100px;
+	    width: 100px;
+	    background-image: url("../assets/images/video_monitoring.png");
+	    background-position: center;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    position: relative;
+	    left:0;
+	    right: 0;
+	    margin: auto;
+	    top:15%;
+	}
+	h3{
+		position: relative;
+		top: 15%;
+		color: white;
+		font-family: 'Roboto', serif;
+	}
+	p{
+		position: relative;
+		top: 20%;
+		color: white;
+		width:80%;
+		left:0;
+		right: 0;
+		margin: auto;
+		font-family: 'Roboto', serif;
+	}
+
+</style>

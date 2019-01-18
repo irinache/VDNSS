@@ -2,3 +2,17 @@ body, html{
 	margin:0;
 	padding:0;
 }
+
+.block{
+	position: relative;
+	text-align: center;
+	padding:50px;	
+	z-index: 0;
+	background-repeat: no-repeat;
+ 	background-size: 100%;
+}
+
+h2{
+		font-size: 24pt;
+		text-align: center;		
+	}

@@ -49,11 +49,11 @@
   menu{
     position: absolute;
     top:80%;
-    width: 92%;
+    width: 94%;
     left: 0;
     right: 0;
     margin: auto;
-    padding: 0 4%;
+    padding: 0 2%;
     display: flex;
     flex-wrap: nowrap;
   }
@@ -66,12 +66,17 @@
   }
   .menuitem:hover {
     background-color: #5cd5cb;
+    transition: 0.4s;
+  }
+  .menuitem:not(:hover) {    
+    transition: 0.4s;
   }
   .menuitem p{
       display: inline-block;
       text-align: center;
       font-size: 10pt;
       margin: 0;
+      font-family: 'Roboto', serif;
   }
   .icon{
     display: inline-block;

@@ -24,12 +24,8 @@
 
 <style lang="scss"  scoped>
 .block{
-  position: relative;  
-  width: 100%;
-  height: 830px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  z-index: 0;
+  height: 730px;
+
 }
 h1{
   position:absolute;
@@ -40,6 +36,7 @@ h1{
   right:0;
   left:0;
   margin:auto;
+  font-family: 'Roboto', serif;
 }
 h1:before, h1:after{
   content: '';
@@ -60,13 +57,14 @@ p{
   color:white;
   margin:auto;
   width: 50%;
+  font-family: 'Roboto', serif;
 
 }
 
 .arrow{
   position:absolute;
   opacity: 0.5;
-  top: 80vh;
+  bottom: 100px;
   left:0;
   right:0;
   margin:auto;
@@ -78,6 +76,9 @@ p{
 }
 .arrow:hover{
   opacity: 1;
+  transition: 0.5s;
 }
-
+.arrow:not(:hover){
+  transition: 0.5s;
+}
 </style>
