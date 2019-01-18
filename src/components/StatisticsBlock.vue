@@ -78,6 +78,8 @@
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/index.scss";
+
 	.statistics{
 		background-image: url("../assets/images/stat_bg.png");
 		height: 350px;

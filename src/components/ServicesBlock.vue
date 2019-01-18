@@ -30,14 +30,13 @@
 	</div>
 </template>
 
-<script>
-	
-</script>
+<script></script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/index.scss";
 
 	.service{
-		background-color: #2fc3b7;
+		background-color: $main_color;
 		display: inline-block;
 		width: 340px;
 		height: 340px;
@@ -46,15 +45,18 @@
 	
 	}
 	.service:hover{
-		background-color: #5cd5cb;
+		background-color: $main_color_hover;
 		transition: 0.3s;	
+	}
+	h2{
+		text-align: center;
 	}
 	
 	h2:after{
 		content:" ";
 		height: 2px;
 		width:300px;
-		background-color: #b7b7b7;
+		background-color: $grey;
 		display: block;
 		left:0;
 		right: 0;

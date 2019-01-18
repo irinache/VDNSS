@@ -11,18 +11,11 @@
 </div>
 </template>
 
-<script>
- // import Header from './components/Header.vue'
-  export default {
-    
-  //  components: {
-   //   Header
-  //  }
-
-  }
-</script>
+<script></script>
 
 <style lang="scss"  scoped>
+@import "../assets/styles/index.scss";
+
 .block{
   height: 730px;
 
@@ -58,7 +51,6 @@ p{
   margin:auto;
   width: 50%;
   font-family: 'Roboto', serif;
-
 }
 
 .arrow{

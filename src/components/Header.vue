@@ -30,6 +30,8 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss"  scoped>
+  @import "../assets/styles/index.scss";
+
   header{
     position: relative;
     width: 100%;
@@ -61,7 +63,7 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 1px solid #acacac;
+    border: 1px solid $grey;
     margin-right: 30px;
     margin-left: 30px;
     background-repeat: no-repeat;

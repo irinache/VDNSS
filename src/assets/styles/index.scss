@@ -1,0 +1,24 @@
+$grey: #b7b7b7;
+$light_grey: #f3f3f3;
+$main_color: #2fc3b7;
+$main_color_hover: #5cd5cb;
+
+
+body, html{
+	margin:0;
+	padding:0;
+}
+
+.block{
+	position: relative;
+	text-align: center;
+	padding:50px;	
+	z-index: 0;
+	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+}
+
+h2{
+		font-size: 24pt;		
+}

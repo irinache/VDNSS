@@ -46,6 +46,8 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+  @import "../assets/styles/index.scss";
+
   menu{
     position: absolute;
     top:80%;

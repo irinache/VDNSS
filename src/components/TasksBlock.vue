@@ -1,0 +1,99 @@
+<template>
+	<div class="block">
+		<div class="list">
+			<h2>МЫ РЕШАЕМ ЗАДАЧИ</h2>
+			<ul>
+				<li>
+					<div class="check">
+						
+					</div>
+					<p>Lorem ipsum dolor</p>
+				</li>
+				<li>
+					<div class="check">
+						
+					</div>
+					<p>Sit amet, consectetur</p>
+				</li>
+				<li>
+					<div class="check">
+						
+					</div>
+					<p>Adipiscing elit, sed do</p>
+				</li>
+				<li>
+					<div class="check">
+						
+					</div>
+					<p>Eiusmod tempor</p>
+				</li>
+				<li>
+					<div class="check">
+						
+					</div>
+					<p>Ut enim ad minim veniam</p>
+				</li>
+			</ul>
+		</div>
+		<div class="image"></div>
+	</div>
+</template>
+
+<script></script>
+
+<style lang="scss" scoped>
+@import "../assets/styles/index.scss";
+
+	h2{
+		text-align: left;
+		vertical-align: top;
+	}
+	h2:after{
+		content:" ";
+		height: 2px;
+		width:300px;
+		background-color: $grey;
+		display: block;
+		margin-top: 10px;
+	}
+	.list{
+
+		display: inline-block;
+		width: 45%
+
+	}
+	.image{
+		display: inline-block;
+		width: 45%;
+		height: 400px;
+		background-image:  url("../assets/images/tasks_img.png");
+		background-position: center;
+	}
+	ul{
+		padding: 0;
+		margin-right: 30px
+	}
+	li{
+		background-color: $light_grey;
+		text-align: left;
+		margin-top: 10px;
+		list-style: none;
+		display: flex;
+		align-items: center;
+
+	}
+	p{
+		display: inline-block;
+	}
+	.check{
+		height: 60px;
+		width:60px;
+		background-color: $main_color;
+		background-image:  url("../assets/images/check.png");
+		background-repeat: no-repeat;
+ 		background-position: center;
+		display:  inline-block;
+		margin-right: 30px;		
+	}
+
+</style>
