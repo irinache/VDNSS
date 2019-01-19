@@ -93,6 +93,7 @@
   .sn_text{
     display:block;
     text-align: center;
+    font-family: 'Roboto', serif;
   }
   .sn{
     display: inline-block;
