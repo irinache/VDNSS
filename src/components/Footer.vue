@@ -49,7 +49,7 @@
   }
   .contacts{
     position: absolute;
-    width: 70%;
+  //  width: 70%;
     top:0;
     right: 50px;
     margin: 30px;

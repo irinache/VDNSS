@@ -13,7 +13,7 @@
 				</p>
 			</li>
 			<li>
-				<div class="icon clients">
+				<div class="icon years">
 					
 				</div>
 				<h1 class="counter">
@@ -24,7 +24,7 @@
 				</p>
 			</li>
 			<li>
-				<div class="icon clients">
+				<div class="icon tasks">
 					
 				</div>
 				<h1 class="counter">
@@ -35,7 +35,7 @@
 				</p>
 			</li>
 			<li>
-				<div class="icon clients">
+				<div class="icon houses">
 					
 				</div>
 				<h1 class="counter">
@@ -80,24 +80,16 @@
 		background-image: url("../assets/images/stat_bg.png");
 		height: 350px;
 	}
-	li{
-		//list-style: none;
+	li{		
 		width: 19%;
 		display:inline-block;
 		padding: 30px;
 		border-left: white 1px solid;
 	}
-	/*li:after{
-		content:" ";
-		display: inline-block;
-		width: 1px;
-		height:80px;
-		background-color: white;		
-		vertical-align: middle;
-		z-index:1;
-	}*/
+
 	li:first-child {
- 	border: none}
+ 	border: none;
+ 	}
 	h1{
 	  text-align: center;
 	  color: white;
@@ -122,12 +114,21 @@
 	    margin: auto;
 	}
 	.clients{
- 		background-image: url("../assets/images/video_monitoring.png");
+ 		background-image: url("../assets/images/clients.png");
+	}
+	.years{
+ 		background-image: url("../assets/images/years.png");
+	}
+	.tasks{
+ 		background-image: url("../assets/images/tasks.png");
+	}
+	.houses{
+ 		background-image: url("../assets/images/houses.png");
+	}
+	.counter {
+	  animation-duration: 1s;
+	  animation-delay: 0s;
 	}
 
-	.counter {
-  animation-duration: 1s;
-  animation-delay: 0s;
-}
 
 </style>

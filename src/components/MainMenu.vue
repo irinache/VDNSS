@@ -6,22 +6,22 @@
       <p v-html="services.video_monitoring"></p>
     </a>
     <a class="menuitem" href="#">
-      <div class="icon">  
+      <div class="icon access_control">  
       </div>
       <p v-html="services.access_control"></p>
     </a>
     <a class="menuitem" href="#">
-      <div class="icon">  
+      <div class="icon computer_networks">  
       </div>
       <p v-html="services.computer_networks"></p>
     </a>
     <a class="menuitem" href="#">
-      <div class="icon">  
+      <div class="icon intercom">  
       </div>
       <p v-html="services.intercom"></p>
     </a>
     <a class="menuitem" href="#">
-      <div class="icon">  
+      <div class="icon alarm">  
       </div>
       <p v-html="services.alarm"></p>
     </a>    
@@ -85,13 +85,25 @@
     margin-right: 10px;
     height: 34px;
     width: 34px;
-    background-image: url("../assets/images/video_monitoring.png");
+   // background-image: url("../assets/images/video_monitoring.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
   .video_monitoring{
- //   background-image: url("../assets/images/video_monitoring.png");
+    background-image: url("../assets/images/video_monitoring.png");
+  }
+  .access_control{
+    background-image: url("../assets/images/access_control.png");
+  }
+  .computer_networks{
+    background-image: url("../assets/images/computer_networks.png");
+  }
+  .intercom{
+    background-image: url("../assets/images/intercom.png");
+  }
+  .alarm{
+    background-image: url("../assets/images/alarm.png");
   }
  
 </style>

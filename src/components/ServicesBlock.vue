@@ -2,28 +2,28 @@
 	<div class="block" id="services" >
 		<h2>НАШИ УСЛУГИ</h2>
 		<a href="#" class="service">
-			<div class="icon"></div>
+			<div class="icon video_monitoring"></div>
 			<h3>Системы<br>видеонаблюдения</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</a>
 		<a href="#" class="service">
-			<div class="icon"></div>
+			<div class="icon access_control"></div>
 			<h3>Системы контроля<br>доступа</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</a>
 
 		<a href="#" class="service">
-			<div class="icon"></div>
+			<div class="icon computer_networks"></div>
 			<h3>Проектирование и монтаж<br>компьютерных сетей</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</a>
 		<a href="#" class="service">
-			<div class="icon"></div>
+			<div class="icon intercom"></div>
 			<h3>Домофонные<br>cистемы</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</a>
 		<a href="#" class="service">
-			<div class="icon"></div>
+			<div class="icon alarm"></div>
 			<h3>Пожарные и охранные<br>сигнализации</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</a>
@@ -92,5 +92,20 @@
 		margin: auto;
 		font-family: 'Roboto', serif;
 	}
+	.video_monitoring{
+	    background-image: url("../assets/images/video_monitoring.png");
+	  }
+	  .access_control{
+	    background-image: url("../assets/images/access_control.png");
+	  }
+	  .computer_networks{
+	    background-image: url("../assets/images/computer_networks.png");
+	  }
+	  .intercom{
+	    background-image: url("../assets/images/intercom.png");
+	  }
+	  .alarm{
+	    background-image: url("../assets/images/alarm.png");
+	  }
 
 </style>
