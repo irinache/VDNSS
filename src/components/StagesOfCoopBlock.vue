@@ -35,7 +35,11 @@
 	</div>
 </template>
 
-<script></script>
+<script>
+	export default {
+		   
+  }
+</script>
 
 <style lang="scss" scoped>
 	@import "../assets/styles/index.scss";
@@ -62,8 +66,10 @@
 			font-size: 20pt; 
 			vertical-align: middle;
 			line-height: 50px;
+			font-family: 'Roboto', serif;
 		}
 		p{
+			font-family: 'Roboto', serif;
 			position:relative;
 			top: 50px;
 		}

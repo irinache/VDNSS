@@ -37,7 +37,11 @@
 	</div>
 </template>
 
-<script></script>
+<script>
+	export default {
+		   
+  }
+</script>
 
 <style lang="scss" scoped>
 	@import "../assets/styles/index.scss";
@@ -99,5 +103,8 @@
  		background-position: center;
 		display:  inline-block;
 		margin-right: 30px;		
+	}
+	p{
+		font-family: 'Roboto', serif;
 	}
 </style>
