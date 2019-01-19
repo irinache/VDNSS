@@ -72,6 +72,7 @@
 		height: 400px;
 		background-image:  url("../assets/images/tasks_img.png");
 		background-position: center;
+		background-repeat: no-repeat;
 	}
 	ul{
 		padding: 0;

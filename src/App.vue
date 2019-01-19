@@ -7,6 +7,8 @@
     <TasksBlock />
     <WhyWeBlock />
     <StagesOfCoopBlock />
+    <WeCooperateWithBlock />
+    <Footer />
   </div>
 </template>
 <script>
@@ -17,6 +19,8 @@
   import TasksBlock from './components/TasksBlock.vue'
   import WhyWeBlock from './components/WhyWeBlock.vue'
   import StagesOfCoopBlock from './components/StagesOfCoopBlock.vue'
+  import WeCooperateWithBlock from './components/WeCooperateWithBlock.vue'
+  import Footer from './components/Footer.vue'
   export default {
     name: 'app',
     components: {
@@ -26,7 +30,9 @@
       StatisticsBlock,
       TasksBlock,
       WhyWeBlock,
-      StagesOfCoopBlock
+      StagesOfCoopBlock,
+      WeCooperateWithBlock,
+      Footer
     }
 
   }

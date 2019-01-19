@@ -1,5 +1,5 @@
 <template>
-	<div class="block">
+	<div class="block" id="services" >
 		<h2>НАШИ УСЛУГИ</h2>
 		<a href="#" class="service">
 			<div class="icon"></div>
@@ -41,8 +41,7 @@
 		width: 340px;
 		height: 340px;
 		margin: 0.5%;
-		text-decoration: none;
-	
+		text-decoration: none;	
 	}
 	.service:hover{
 		background-color: $main_color_hover;

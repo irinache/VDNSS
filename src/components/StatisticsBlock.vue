@@ -5,7 +5,7 @@
 				<div class="icon clients">
 					
 				</div>
-				<h1>	
+				<h1 class="counter">
 				{{clients}}
 				</h1>
 				<p>
@@ -16,10 +16,10 @@
 				<div class="icon clients">
 					
 				</div>
-				<h1>
+				<h1 class="counter">
 				{{years}}
 				</h1>
-				<p>
+				<p >
 					Лет<br>на рынке
 				</p>
 			</li>
@@ -27,7 +27,7 @@
 				<div class="icon clients">
 					
 				</div>
-				<h1>
+				<h1 class="counter">
 				{{tasks}}
 				</h1>
 				<p>
@@ -38,7 +38,7 @@
 				<div class="icon clients">
 					
 				</div>
-				<h1>
+				<h1 class="counter">
 				{{houses}}
 				</h1>
 				<p>
@@ -50,28 +50,24 @@
 </template>
 
 <script>
-		 
 
 	export default {
 	data(){
 		return{
-			clients: 3000,
+			clients: 3085,
 			years: 10,
 			tasks: 4534,
-			houses: 5467, 
-			i: 0
+			houses: 5447
 		}
 	},  		
-	/*mounted() {
-		calc: {
-			console.log(" ready!");
-			this.i = 0;
-			while(this.i<this.clients){
-				setTimeout( this.i++, 10);	
-				console.log("if ");  	
-			}
-		}	
-	}*/
+	mounted() {
+		$('.counter').counterUp({
+		  delay: 10,
+		  time: 2000
+		});
+		$('.counter').addClass('animated fadeInDownBig');
+		$('h3').addClass('animated fadeIn');
+	}
 }
 
   	
@@ -128,4 +124,10 @@
 	.clients{
  		background-image: url("../assets/images/video_monitoring.png");
 	}
+
+	.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
 </style>

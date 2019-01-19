@@ -3,6 +3,16 @@ body, html{
 	padding: 0;
 }
 
+ #logo{
+   
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin: 30px 80px;
+    height: 72px;
+    width: 154px;
+ }
+
 .block{
 	position: relative;
 	text-align: center;
