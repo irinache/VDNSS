@@ -8,6 +8,7 @@
     <WhyWeBlock />
     <StagesOfCoopBlock />
     <WeCooperateWithBlock />
+    <Contacts />
     <Footer />
   </div>
 </template>
@@ -20,6 +21,7 @@
   import WhyWeBlock from './components/WhyWeBlock.vue'
   import StagesOfCoopBlock from './components/StagesOfCoopBlock.vue'
   import WeCooperateWithBlock from './components/WeCooperateWithBlock.vue'
+  import Contacts from './components/Contacts.vue'
   import Footer from './components/Footer.vue'
   export default {
     name: 'app',
@@ -32,6 +34,7 @@
       WhyWeBlock,
       StagesOfCoopBlock,
       WeCooperateWithBlock,
+      Contacts,
       Footer
     }
 

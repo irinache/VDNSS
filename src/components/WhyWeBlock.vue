@@ -72,10 +72,9 @@
 		width:300px;
 		background-color: $grey;
 		display: block;
+		margin-left:auto;
+		margin-right: 0;
 		margin-top: 10px;
-		position:absolute;
-		right:100px;
-	//	text-align: right;
 	}
 	.text {
 		text-align: justify;

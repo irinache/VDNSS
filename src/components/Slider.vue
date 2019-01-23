@@ -94,7 +94,7 @@
 		display: inline;	
 		background-position: center;
 		background-repeat: no-repeat;
-		background-color: white;
+		background-color: $light_grey;
 		outline:none;
 	}
 
@@ -121,24 +121,24 @@
 	    background-image: url("../assets/images/slide1.png");
 	    background-repeat: no-repeat;
 	    background-position: center;
-	    background-color:white;
+	    background-color:$light_grey;
 	}
 	.slide:nth-of-type(2) {
 	    background-image: url("../assets/images/slide2.png");
 	    background-repeat: no-repeat;
 	    background-position: center;
-	    background-color:white;
+	    background-color:$light_grey;
 	}
 	.slide:nth-of-type(3) {
 	    background-image: url("../assets/images/slide1.png");
 	    background-repeat: no-repeat;
 	    background-position: center;
-	    background-color:white;
+	    background-color:$light_grey;
 	}
 	.slide:nth-of-type(4) {
 	    background-image: url("../assets/images/slide2.png");
 	    background-repeat: no-repeat;
 	    background-position: center;
-	    background-color:white;
+	    background-color:$light_grey;
 	}
 </style>

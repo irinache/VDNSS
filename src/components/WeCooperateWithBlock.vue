@@ -1,5 +1,5 @@
 <template>
-	<div class="block">
+	<div class="block light_grey">
 		<h2>МЫ СОТРУДНИЧАЕМ С</h2>
 	<Slider />
 	</div>	
@@ -27,5 +27,8 @@
 		right: 0;
 		margin: auto;
 		margin-top: 10px;
+	}
+	.light_grey{
+		background-color: $light_grey;
 	}
 </style>

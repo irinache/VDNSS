@@ -24,11 +24,11 @@
 </template>
 
 <script>
-  import MainMenu from './MainMenu.vue'
+ // import MainMenu from './MainMenu.vue'
   export default {
-    components: {
+  /*  components: {
       MainMenu
-    }
+    }*/
   }
 </script>
 
