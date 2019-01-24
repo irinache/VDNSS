@@ -1,7 +1,7 @@
 <template>
   <header>
 
-    <a href="#" id="logo"></a>
+    <router-link to="/" id="logo"></router-link>
 
     <div class="contacts">
       <div class="icon phone"></div>

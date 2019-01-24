@@ -28,7 +28,7 @@
 			<p class="err" v-if="empty_phone_num">{{err_msg_2}}</p>
 			<input v-model="phone_num" type="text" placeholder="Номер телефона">
 			<textarea v-model="comment" type="text" placeholder="Комментарий"></textarea> 
-			<input class="button" type="submit" value="Отправить">	
+			<input class="button" type="submit" value="Перезвоните мне">	
 		</form>
 		<div class="info">
 			<h3>Телефон</h3>
@@ -172,6 +172,7 @@
 		font-size: 10pt;
 		text-align: left;
 		margin-bottom: 5px;
+		font-family: 'Roboto', serif;
 	}
 
 </style>

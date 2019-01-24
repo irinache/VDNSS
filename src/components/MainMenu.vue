@@ -1,30 +1,30 @@
 <template>
   <menu>
-    <a class="menuitem" href="#">
+    <router-link to="/video_monitoring" class="menuitem">
       <div class="icon video_monitoring">  
       </div>
       <p v-html="services.video_monitoring"></p>
-    </a>
-    <a class="menuitem" href="#">
+    </router-link>
+    <router-link to="/video_monitoring" class="menuitem">
       <div class="icon access_control">  
       </div>
       <p v-html="services.access_control"></p>
-    </a>
-    <a class="menuitem" href="#">
+    </router-link>
+    <router-link to="/video_monitoring" class="menuitem">
       <div class="icon computer_networks">  
       </div>
       <p v-html="services.computer_networks"></p>
-    </a>
-    <a class="menuitem" href="#">
+    </router-link>
+    <router-link to="/video_monitoring" class="menuitem">
       <div class="icon intercom">  
       </div>
       <p v-html="services.intercom"></p>
-    </a>
-    <a class="menuitem" href="#">
+    </router-link>
+    <router-link to="/video_monitoring" class="menuitem">
       <div class="icon alarm">  
       </div>
       <p v-html="services.alarm"></p>
-    </a>    
+    </router-link>    
   </menu>
 </template>
 
