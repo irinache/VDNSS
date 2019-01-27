@@ -3,7 +3,13 @@ body, html{
 	padding: 0;
 }
 
- #logo{
+$grey: #b7b7b7;
+$light_grey: #f3f3f3;
+$darker_light_grey: #eeeeee;
+$main_color: #2fc3b7;
+$main_color_hover: #5cd5cb;
+
+#logo{
    
     background-repeat: no-repeat;
     background-size: contain;
@@ -28,8 +34,61 @@ h2{
 	font-family: 'Roboto', serif;
 }
 
-
-$grey: #b7b7b7;
-$light_grey: #f3f3f3;
-$main_color: #2fc3b7;
-$main_color_hover: #5cd5cb;
+h2.center{
+	text-align:center;
+}
+h2.center:after{
+	content:" ";
+	height: 2px;
+	width:300px;
+	background-color: $grey;
+	display: block;
+	left:0;
+	right: 0;
+	margin: auto;
+	margin-top: 10px;
+}
+h2.left{
+	text-align: left;
+	vertical-align: top;
+}
+h2.left:after{
+	content:" ";
+	height: 2px;
+	width:300px;
+	background-color: $grey;
+	display: block;
+	margin-top: 10px;
+}
+h2.right{
+	margin-top:0;
+	text-align: right;
+}
+h2.right:after{
+	content:" ";
+	height: 2px;
+	width:300px;
+	background-color: $grey;
+	display: block;
+	margin-left:auto;
+	margin-right: 0;
+	margin-top: 10px;
+}
+h2.light{
+	color:white;
+}
+h3.left{
+	font-size: 16pt;
+	font-weight: normal;		
+	font-family: 'Roboto', serif;
+	text-align: left;
+	margin-top: 0;
+}
+h3.left:after{
+	content:" ";
+	height: 2px;
+	width:300px;
+	background-color: $grey;
+	display: block;
+	margin-top: 10px;
+}

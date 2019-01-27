@@ -2,7 +2,7 @@
 	<div class="block why_we">
 		<div class="image"></div>
 		<div class="article">
-			<h2>ПОЧЕМУ МЫ?</h2>
+			<h2 class="right">ПОЧЕМУ МЫ?</h2>
 			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 			</p>
 			<ul>
@@ -62,27 +62,12 @@
 		margin-left: 30px;
 		vertical-align: top;
 	}
-	h2{
-		margin-top:0;
-		text-align: right;
-	}
-	h2:after{
-		content:" ";
-		height: 2px;
-		width:300px;
-		background-color: $grey;
-		display: block;
-		margin-left:auto;
-		margin-right: 0;
-		margin-top: 10px;
-	}
 	.text {
 		text-align: justify;
 		margin-top: 40px;
 	}
 	ul{
-		padding: 0;
-		
+		padding: 0;		
 	}
 	li{
 		background-color: $light_grey;

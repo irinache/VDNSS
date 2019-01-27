@@ -1,30 +1,30 @@
 <template>
 	<div class="block" id="services" >
-		<h2>НАШИ УСЛУГИ</h2>
+		<h2 class="center">НАШИ УСЛУГИ</h2>
 		<a href="#" class="service">
 			<div class="icon video_monitoring"></div>
-			<h3>Системы<br>видеонаблюдения</h3>
+			<h4>Системы<br>видеонаблюдения</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</a>
 		<a href="#" class="service">
 			<div class="icon access_control"></div>
-			<h3>Системы контроля<br>доступа</h3>
+			<h4>Системы контроля<br>доступа</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</a>
 
 		<a href="#" class="service">
 			<div class="icon computer_networks"></div>
-			<h3>Проектирование и монтаж<br>компьютерных сетей</h3>
+			<h4>Проектирование и монтаж<br>компьютерных сетей</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</a>
 		<a href="#" class="service">
 			<div class="icon intercom"></div>
-			<h3>Домофонные<br>cистемы</h3>
+			<h4>Домофонные<br>cистемы</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</a>
 		<a href="#" class="service">
 			<div class="icon alarm"></div>
-			<h3>Пожарные и охранные<br>сигнализации</h3>
+			<h4>Пожарные и охранные<br>сигнализации</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</a>
 	</div>
@@ -38,7 +38,6 @@
 
 <style lang="scss" scoped>
 @import "../assets/styles/index.scss";
-
 	.service{
 		background-color: $main_color;
 		display: inline-block;
@@ -46,27 +45,12 @@
 		height: 340px;
 		margin: 0.5%;
 		text-decoration: none;	
+		vertical-align: middle;
 	}
 	.service:hover{
 		background-color: $main_color_hover;
 		transition: 0.3s;	
 	}
-	h2{
-		text-align: center;
-	}
-	
-	h2:after{
-		content:" ";
-		height: 2px;
-		width:300px;
-		background-color: $grey;
-		display: block;
-		left:0;
-		right: 0;
-		margin: auto;
-		margin-top: 10px;
-	}
-
 	.icon{
 	    height: 100px;
 	    width: 100px;
@@ -80,11 +64,12 @@
 	    margin: auto;
 	    top:15%;
 	}
-	h3{
+	h4{
 		position: relative;
 		top: 15%;
 		color: white;
 		font-family: 'Roboto', serif;
+		font-size: 14pt;
 	}
 	p{
 		position: relative;

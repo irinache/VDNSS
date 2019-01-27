@@ -64,7 +64,7 @@
     background-color: #2fc3b7;
     width: 20%;
     color: white;   
-     text-align: center; 
+    text-align: center; 
   }
   .menuitem:hover {
     background-color: #5cd5cb;
@@ -84,8 +84,7 @@
     display: inline-block;
     margin-right: 10px;
     height: 34px;
-    width: 34px;
-   // background-image: url("../assets/images/video_monitoring.png");
+    width: 34px;   
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

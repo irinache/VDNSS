@@ -1,6 +1,6 @@
 <template>
    <div class="block welcome">
-    <h1> ВДНСС </h1>
+    <h1>ВДНСС</h1>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <br>
@@ -43,6 +43,8 @@ h1:before, h1:after{
   width: 90px;
   height: 5px;
   background: white;
+  margin-right:30px;
+  margin-left:30px;
 }
 
 .welcome{

@@ -1,7 +1,7 @@
 import Vue from 'vue/dist/vue.js'
 import Router from 'vue-router'
 import MainPage from '../components/MainPage'
-import Contacts from '../components/Contacts'
+import Service from '../components/Video_monitoring'
 
 Vue.use(Router)
 
@@ -16,7 +16,7 @@ export default new Router({
     {
       path: '/video_monitoring',
       name: 'Video_monitoring',
-      component: Contacts
+      component: Service
     }
   ]
 })

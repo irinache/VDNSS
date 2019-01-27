@@ -1,7 +1,7 @@
 <template>
 	<div class="block">
 		<div class="list">
-			<h2>МЫ РЕШАЕМ ЗАДАЧИ</h2>
+			<h2 class="left">МЫ РЕШАЕМ ЗАДАЧИ</h2>
 			<ul>
 				<li>
 					<div class="check">
@@ -48,18 +48,6 @@
 <style lang="scss" scoped>
 @import "../assets/styles/index.scss";
 
-	h2{
-		text-align: left;
-		vertical-align: top;
-	}
-	h2:after{
-		content:" ";
-		height: 2px;
-		width:300px;
-		background-color: $grey;
-		display: block;
-		margin-top: 10px;
-	}
 	.list{
 
 		display: inline-block;

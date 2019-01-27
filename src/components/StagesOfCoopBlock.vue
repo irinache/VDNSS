@@ -1,6 +1,6 @@
 <template>
 	<div class="block stages">
-		<h2 class="light">ЭТАПЫ СОТРУДНИЧЕСТВА</h2>
+		<h2 class="light center">ЭТАПЫ СОТРУДНИЧЕСТВА</h2>
 		<div class="squares">
 			<div class="square">
 				<div class="num">
@@ -72,22 +72,8 @@
 			font-family: 'Roboto', serif;
 			position:relative;
 			top: 50px;
+			color:white;
 		}
-	}
-
-	.light{
-		color: white;
-	}
-	h2:after{
-		content:" ";
-		height: 2px;
-		width:300px;
-		background-color: white;
-		display: block;
-		left:0;
-		right: 0;
-		margin: auto;
-		margin-top: 10px;
 	}
 	.right_arrow{
 		display: inline-block;
