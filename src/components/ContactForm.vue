@@ -62,6 +62,7 @@
 		background-color: $light_grey;
 		padding:3%;
 		width: 50%;
+		margin-bottom:30px;
 
 		input, textarea{
 			display:block;
@@ -95,5 +96,12 @@
 		text-align: left;
 		margin-bottom: 5px;
 		font-family: 'Roboto', serif;
+	}
+	@media screen and (max-width: 915px) {
+    	form{
+			display:block;			
+			width: 90%;
+			margin:auto;
+		}
 	}
 </style>

@@ -4,14 +4,19 @@
     <router-link to="/" id="logo"></router-link>
 
     <div class="contacts">
-      <div class="icon phone"></div>
-      <div class="contacts_text">+38 067 47 85 459<br>+38 066 47 85 459</div>
-
-      <div class="icon email"></div>
-      <div class="contacts_text">ex@gmail.com</div>
-
-      <div class="icon address"></div>
-      <div class="contacts_text">Украина, г. Днепр<br>ул. Сафонова, 6</div>
+      <div class="contact">
+        <div class="icon phone"></div>
+        <div class="contacts_text">+38 067 47 85 459<br>+38 066 47 85 459</div>
+      </div>
+      
+      <div class="contact">
+        <div class="icon email"></div>
+        <div class="contacts_text">ex@gmail.com</div>
+      </div>
+      <div class="contact">
+        <div class="icon address"></div>
+        <div class="contacts_text">Украина, г. Днепр<br>ул. Сафонова, 6</div>
+      </div>
     </div>
 
     <MainMenu />
@@ -40,27 +45,28 @@
   }
   #logo{
      background-image: url("../assets/images/logo.png");
+     display: inline-block;
+     vertical-align: middle;
   }
   .contacts{
-    position: absolute;
-    top:0;
-    right: 50px;
+  //  margin-bottom: 50px;
+  //  text-align: right;
     display: inline-block;
-    margin: 30px;
-    display: flex;
-    flex-wrap: nowrap;
-
-
+    vertical-align: middle;   
+   // margin:auto;
+  }
+  .contact{
+     display: inline-block;
   }
   .icon{
     display: inline-block;
     width: 50px;
     height: 50px;
     border: 1px solid $grey;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin: 30px;    
     background-repeat: no-repeat;
     background-position: center;
+    vertical-align: middle;
   }
   .phone{
     background-image: url("../assets/images/phone.png");   
@@ -76,8 +82,24 @@
   }
 
   .contacts_text{
+    display: inline-block;
+    vertical-align: middle;
     color: black;
     margin:auto;
     font-family: 'Roboto', serif;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .contacts{          
+      margin-bottom: 50px;
+      display:block;
+      text-align:center;
+
+    }
+    #logo{
+      margin:auto;
+      margin-top: 30px;
+      display:block;
+    }
   }
 </style>

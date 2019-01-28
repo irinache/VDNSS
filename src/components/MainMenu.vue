@@ -103,6 +103,29 @@
   }
   .alarm{
     background-image: url("../assets/images/alarm.png");
+  } 
+  @media screen and (max-width: 1255px) {
+     .menuitem p{
+      font-size: 9pt;    
+  }
+  }
+  @media screen and (max-width: 1165px) {
+     .menuitem p{
+      display:block;
+      font-size: 9pt; 
+  }
+  
+}
+  @media screen and (max-width: 1100px) {
+    menu{    
+      top:100%;
+    }
+  }
+  @media screen and (max-width: 550px) {
+   //меню вылазит за границы
+  }
+  a{
+    text-decoration: none;
   }
  
 </style>

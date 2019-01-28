@@ -23,14 +23,20 @@
 	<div class="contacts">
 		<ContactForm></ContactForm>
 		<div class="info">
-			<h3 class="left">Телефон</h3>
-			<p>+38 067 85 67 486</p>
-			<p>+38 067 85 67 486</p>
-			<h3 class="left">Электронная почта</h3>
-			<p>ex@gmail.com</p>			
-			<h3 class="left">Адрес</h3>
-			<p>Украина, г.Днепр</p>
-			<p>ул. Сафонова, 6</p>
+			<div class="item">
+				<h3 class="left">Телефон</h3>
+				<p>+38 067 85 67 486</p>
+				<p>+38 067 85 67 486</p>
+			</div>
+			<div class="item">
+				<h3 class="left">Электронная почта</h3>
+				<p>ex@gmail.com</p>
+			</div>
+			<div class="item">		
+				<h3 class="left">Адрес</h3>
+				<p>Украина, г.Днепр</p>
+				<p>ул. Сафонова, 6</p>
+			</div>
 		</div>	
 	</div>
 	
@@ -50,6 +56,7 @@
   @import "../assets/styles/index.scss";
   	.contacts{
 		width:100%;	
+		margin:auto;
 		margin-top: 30px;	
   	}
 	.map{
@@ -73,5 +80,22 @@
 		text-align: left;	
 		font-family: 'Roboto', serif;
 		vertical-align:top;
+	}
+	.item{
+		display:inline-block;
+		vertical-align: top;
+		margin: 20px;
+	}
+	@media screen and (max-width: 915px) {
+    	.info{
+			display:block;			
+			width: 90%;
+			text-align:center;
+			margin:auto;			
+			margin-top: 30px;
+		}
+		h3{
+			text-align:center;
+		}
 	}
 </style>

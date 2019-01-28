@@ -78,17 +78,19 @@
 
 	.statistics{
 		background-image: url("../assets/images/stat_bg.png");
-		height: 350px;
+		//height: 350px;
 	}
 	li{		
-		width: 19%;
+		width: 150px;
+		height:250px;
 		display:inline-block;
 		padding: 30px;
 		border-left: white 1px solid;
+		vertical-align: middle;
 	}
 
 	li:first-child {
- 	border: none;
+ 		border: none;
  	}
 	h1{
 	  text-align: center;
@@ -129,6 +131,17 @@
 	  animation-duration: 1s;
 	  animation-delay: 0s;
 	}
-
-
+	@media screen and (max-width: 1170px) {
+	    li{		
+		width: 111px;
+		display:inline-block;
+		padding: 30px;
+		//border-left: white 1px solid;
+	}
+	}
+	@media screen and (max-width: 843px) {
+	li{
+ 		border: none;
+ 	}
+	}
 </style>

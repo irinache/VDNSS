@@ -45,7 +45,7 @@
 	@import "../assets/styles/index.scss";
 
 	.stages{
-		height: 300px;
+		//height: 300px;
 		background-image:url(../assets/images/stages_of_coop_bg.png);
 	}
 	.square{
@@ -85,5 +85,21 @@
 		vertical-align: middle;
 		margin-top:1%;
 	}
-
+	@media screen and (max-width: 1030px) {
+	   .square{
+			margin:10px;
+			width: 160px;
+			height: 160px;
+		}
+	}
+	@media screen and (max-width: 990px) {
+	   .square{
+			margin:10px;
+			width: 160px;
+			height: 160px;
+		}
+		.right_arrow{
+			display: none;
+		}
+	}
 </style>

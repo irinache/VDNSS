@@ -80,4 +80,9 @@ p{
 .arrow:not(:hover){
   transition: 0.5s;
 }
+@media screen and (max-width: 600px) {
+  .arrow{    
+    display:none;
+  }
+}
 </style>

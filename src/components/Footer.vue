@@ -1,16 +1,21 @@
 <template>
   <footer>
-    <a href="#" id="logo"></a>
+     <router-link to="/" id="logo"></router-link>
 
     <div class="contacts">
-      <div class="icon phone"></div>
-      <div class="contacts_text">+38 067 47 85 459<br>+38 066 47 85 459</div>
-
-      <div class="icon email"></div>
-      <div class="contacts_text">ex@gmail.com</div>
-
-      <div class="icon address"></div>
-      <div class="contacts_text">Украина, г. Днепр<br>ул. Сафонова, 6</div>
+      <div class="contact">
+        <div class="icon phone"></div>
+        <div class="contacts_text">+38 067 47 85 459<br>+38 066 47 85 459</div>
+      </div>
+      
+      <div class="contact">
+        <div class="icon email"></div>
+        <div class="contacts_text">ex@gmail.com</div>
+      </div>
+      <div class="contact">
+        <div class="icon address"></div>
+        <div class="contacts_text">Украина, г. Днепр<br>ул. Сафонова, 6</div>
+      </div>   
 
       <div class="social_networks">
         <div class="sn_text">Социальные сети:</div>
@@ -24,11 +29,7 @@
 </template>
 
 <script>
- // import MainMenu from './MainMenu.vue'
   export default {
-  /*  components: {
-      MainMenu
-    }*/
   }
 </script>
 
@@ -41,32 +42,37 @@
     width: 100%;
     background-color: white;
     z-index: 1;
-    background-color: $light_grey;
+    background-color: $light_grey;    
+    overflow: auto;
   }
 
   #logo{
-    background-image: url("../assets/images/logo.png");
+     background-image: url("../assets/images/logo.png");
+     display: inline-block;
+     vertical-align: middle;
   }
   .contacts{
-    position: absolute;
-  //  width: 70%;
-    top:0;
-    right: 50px;
-    margin: 30px;
-    display: flex;
-    flex-wrap: nowrap;
+  //  margin-bottom: 50px;
+  //  text-align: right;
+    display: inline-block;
+    vertical-align: middle;   
+
+   // margin:auto;
+  }
+  .contact{
+     display: inline-block;
   }
   .icon{
     display: inline-block;
+    vertical-align: middle;
     width: 50px;
     height: 50px;
     border: 1px solid $grey;
-     margin:auto;
+    margin:auto;
     margin-right: 30px;
     margin-left: 30px;
     background-repeat: no-repeat;
     background-position: center;
-
   }
   .phone{
     background-image: url("../assets/images/phone.png");   
@@ -82,12 +88,15 @@
   }
 
   .contacts_text{
+    display: inline-block;
+    vertical-align: middle;
     color: black;
     margin:auto;
     font-family: 'Roboto', serif;
   }
   .social_networks{
     display: inline-block;
+    vertical-align: middle;
     margin-left: 40px;
   }
   .sn_text{
@@ -117,4 +126,29 @@
     background-image: url("../assets/images/facebook.png");   
     background-size: 25px;
   }
+   @media screen and (max-width: 1216px) {
+    .contacts{          
+      display:block;
+      margin:auto;
+      text-align:center;
+      margin-bottom: 30px;
+    }
+    .contact{
+      margin:30px;
+    }
+    #logo{
+      margin:auto;
+      margin-top: 30px;
+      display:block;     
+    }
+    .social_networks{
+      display:inline;
+    }
+  }
+  @media screen and (max-width: 599px) {
+    .contact{     
+      display:block;
+    }   
+  }
+   
 </style>

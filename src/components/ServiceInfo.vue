@@ -27,7 +27,7 @@
     			alarm_text: "alarm Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     			access_control_text: "access_control Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     			computer_networks_text: "computer_networks Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    			vm_list: ['Lorem ipsum dolor', 'Sit amet', 'Consectetur adipiscing', 'Elit sed']
+    			vm_list: ['Lorem ipsum dolor', 'Sit amet', 'Consectetur', 'Elit sed']
     		}
     	},
     	created(){
@@ -78,10 +78,8 @@
 		text-align: left;
 		margin-top: 10px;
 		list-style: none;
-		display: inline-flex;
-		align-items: center;
+		display: inline-block;	
 		width: 50%;
-
 	}
 	.check{
 		height: 40px;
@@ -91,10 +89,47 @@
 		background-repeat: no-repeat;
  		background-position: center;
 		display:  inline-block;
-		margin-right: 30px;		
+		vertical-align: middle;
+		margin: 10px;		
 	}
 	p{
+		display: inline-block;
+		vertical-align: middle;
 		font-family: 'Roboto', serif;
 	}
+	@media screen and (max-width: 1075px) {
+	   .image{
+			width: 40%;
+		}
+		.article{
+			width: 50%;
+	  	}
+	}
+	@media screen and (max-width: 980px) {
+	   .image{
+			width: 30%;
+		}
+		.article{
+			width: 60%;
+	  	}
+	}
+	@media screen and (max-width: 835px) {
+	   .image{
+			display: none;
+		}
+		.article{
+			width: 100%;
+	  	}
+	}
+	@media screen and (max-width: 550px) {
+	p{
+		display:block;
+		text-align:center;
+	}
+	.check{
+		display:block;
+		margin:auto;
+	}
+}
 	
 </style>
