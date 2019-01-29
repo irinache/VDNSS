@@ -46,14 +46,15 @@
   #logo{
      background-image: url("../assets/images/logo.png");
      display: inline-block;
-     vertical-align: middle;
-  }
+     vertical-align: middle; 
+   }
   .contacts{
-  //  margin-bottom: 50px;
-  //  text-align: right;
+        float: right;  //
+    margin-right: 5%; //
     display: inline-block;
-    vertical-align: middle;   
-   // margin:auto;
+
+    vertical-align: middle;
+    //text-align: right;
   }
   .contact{
      display: inline-block;
@@ -94,7 +95,8 @@
       margin-bottom: 50px;
       display:block;
       text-align:center;
-
+      float: none;  //
+      margin-right: 0; //
     }
     #logo{
       margin:auto;

@@ -51,12 +51,12 @@
      display: inline-block;
      vertical-align: middle;
   }
-  .contacts{
-  //  margin-bottom: 50px;
-  //  text-align: right;
+  .contacts{    
     display: inline-block;
     vertical-align: middle;   
-
+    float: right;  //
+    //margin:auto;
+    margin-right: 5%; //
    // margin:auto;
   }
   .contact{
@@ -64,15 +64,13 @@
   }
   .icon{
     display: inline-block;
-    vertical-align: middle;
     width: 50px;
     height: 50px;
     border: 1px solid $grey;
-    margin:auto;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin: 30px;    
     background-repeat: no-repeat;
     background-position: center;
+    vertical-align: middle;
   }
   .phone{
     background-image: url("../assets/images/phone.png");   
@@ -126,12 +124,14 @@
     background-image: url("../assets/images/facebook.png");   
     background-size: 25px;
   }
-   @media screen and (max-width: 1216px) {
+   @media screen and (max-width: 1277px) {
     .contacts{          
       display:block;
       margin:auto;
       text-align:center;
       margin-bottom: 30px;
+      float: none;  //
+      margin-right: 0; //
     }
     .contact{
       margin:30px;

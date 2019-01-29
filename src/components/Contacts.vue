@@ -76,7 +76,7 @@
 	.info{
 		display:inline-block;
 		margin-left: 5%;
-		width: 35%;
+		width: 350px;
 		text-align: left;	
 		font-family: 'Roboto', serif;
 		vertical-align:top;

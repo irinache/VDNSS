@@ -81,7 +81,7 @@
 		//height: 350px;
 	}
 	li{		
-		width: 150px;
+		width: 15%;
 		height:250px;
 		display:inline-block;
 		padding: 30px;

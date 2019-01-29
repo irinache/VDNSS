@@ -1,5 +1,5 @@
 <template>
-	<div class="block">
+	<div class="block tasks">
 		<div class="list">
 			<h2 class="left">МЫ РЕШАЕМ ЗАДАЧИ</h2>
 			<ul>
@@ -47,7 +47,6 @@
 
 <style lang="scss" scoped>
 @import "../assets/styles/index.scss";
-
 	.list{
 		display: inline-block;
 		width: 45%;
@@ -58,6 +57,7 @@
 		height: 400px;
 		background-image:  url("../assets/images/tasks_img.png");
 		background-position: center;
+		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	ul{

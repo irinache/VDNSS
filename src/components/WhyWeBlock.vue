@@ -54,6 +54,7 @@
 		height: 380px;
 		background-image:  url("../assets/images/why_we_img.png");
 		background-position: center;
+		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	.article{
