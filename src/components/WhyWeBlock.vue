@@ -116,7 +116,9 @@
 		}
 		.article{
 			width: 100%;
+			margin-left: 0px;
 	  	}
+
 	}
 	@media screen and (max-width: 550px) {
 	p{

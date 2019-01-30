@@ -80,6 +80,9 @@
 		background-image: url("../assets/images/stat_bg.png");
 		//height: 350px;
 	}
+	ul{
+		padding:0;
+	}
 	li{		
 		width: 15%;
 		height:250px;

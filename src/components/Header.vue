@@ -42,6 +42,7 @@
     width: 100%;
     background-color: white;
     z-index: 1;
+
   }
   #logo{
      background-image: url("../assets/images/logo.png");
@@ -49,10 +50,9 @@
      vertical-align: middle; 
    }
   .contacts{
-        float: right;  //
+    float: right;  //
     margin-right: 5%; //
     display: inline-block;
-
     vertical-align: middle;
     //text-align: right;
   }
@@ -89,7 +89,12 @@
     margin:auto;
     font-family: 'Roboto', serif;
   }
-
+  @media screen and (max-width: 1165px) {
+    header{
+      padding-bottom: 25px;
+    }
+    
+  }
   @media screen and (max-width: 1100px) {
     .contacts{          
       margin-bottom: 50px;
@@ -101,7 +106,31 @@
     #logo{
       margin:auto;
       margin-top: 30px;
+      margin-bottom:20px;
       display:block;
     }
+    header{
+      padding-bottom: 0;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    .contacts{
+      margin-bottom:0;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .icon{
+      display:none;
+    }
+    .contacts_text{
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+    margin:20px;
+    font-family: 'Roboto', serif;
+  }
+  .contacts{
+    background-color:$light_grey;
+  }
   }
 </style>

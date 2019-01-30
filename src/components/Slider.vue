@@ -94,6 +94,7 @@
 		display: inline;	
 		background-position: center;
 		background-repeat: no-repeat;
+		background-size:contain;
 		background-color: $light_grey;
 		outline:none;
 		vertical-align:middle;
@@ -111,16 +112,12 @@
 	    z-index: 2;
 	}
 	.slide {
-	  //  font-size: 40px;
 	    padding: 40px;
 	    box-sizing: border-box;
-	  //  background: #333;
-	  //  color: #fff;
 	    background-repeat: no-repeat;
 	    background-position: center;
 	    background-size: contain;
 	    background-color:$light_grey;
-	  //  vertical-align:middle;
 	}
 	 
 	.slide:nth-of-type(1) {
@@ -134,5 +131,11 @@
 	}
 	.slide:nth-of-type(4) {
 	    background-image: url("../assets/images/slide2.png");	   
+	}
+	@media screen and (max-width: 400px) {
+		.controls{		
+			width: 30px;
+			height:30px;			
+		}	
 	}
 </style>

@@ -91,3 +91,27 @@ h3.left:after{
 	display: block;
 	margin-top: 10px;
 }
+
+  @media screen and (max-width: 410px) {
+    .block{
+    	padding:30px;	
+    }
+    h2.center:after{
+    	width:200px;
+    }
+    h2.left:after{
+    	width:200px;
+    }
+    h2.right:after{
+    	width:200px;
+    }
+    h3.left:after{
+    	width:200px;
+    }
+    
+  }
+@media screen and (max-width: 370px) {
+  h2{
+    font-size: 20pt;
+  }
+}

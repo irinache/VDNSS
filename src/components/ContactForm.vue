@@ -62,20 +62,33 @@
 		background-color: $light_grey;
 		padding:3%;
 		width: 50%;
-		margin-bottom:30px;
+		margin-bottom:30px;		
+	}
+	input{
+		display:block;
+		margin: auto;
+		margin-bottom: 20px;
+		border: 1px solid $grey;
+		padding:2%;		
+		width: 96%;
+		font-family: 'Roboto', serif;
+	
+	}
+	textarea{
+		display:block;
+		padding:2%;
+		margin: auto;
+		margin-bottom: 20px;
+		border: 1px solid $grey;
+		height:60px;
+		width: 96%;
+		font-family: 'Roboto', serif;
+		resize: none;
 
-		input, textarea{
-			display:block;
-			margin: auto;
-			margin-bottom: 20px;
-			border: 1px solid $grey;
-			padding:10px;
-			width: 96%;
-			font-family: 'Roboto', serif;
-			resize: none;
-		}
 	}
 	.button{
+		height:40px;
+		padding:0;
 		width: 100%;
 		font-family: 'Roboto', serif;
 		background-color:$main_color;
@@ -97,17 +110,24 @@
 		margin-bottom: 5px;
 		font-family: 'Roboto', serif;
 	}
-	@media screen and (max-width: 915px) {
+	@media screen and (max-width: 1000px) {
     	form{
 			display:block;			
-			width: 90%;
 			margin:auto;
+			width:94%;			
 		}
 	}
-
-  @media screen and (max-width: 700px) {
-    form{
-			
-		}   
-  }
+	@media screen and (max-width: 768px) {
+    	form{	
+    		margin:0;		
+			width:94%;
+		}
+	}
+	@media screen and (max-width: 540px) {
+    	form{	
+    		padding:5%;	
+			width:90%;
+		}
+	}
+ 
 </style>

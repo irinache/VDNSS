@@ -43,7 +43,7 @@
 		display: inline-block;
 		width: 340px;
 		height: 340px;
-		margin: 0.5%;
+		margin:5px;
 		text-decoration: none;	
 		vertical-align: middle;
 	}
@@ -65,15 +65,13 @@
 	    top:15%;
 	}
 	h4{
-		position: relative;
-		top: 15%;
+		margin-top: 20%;
 		color: white;
 		font-family: 'Roboto', serif;
 		font-size: 14pt;
 	}
 	p{
-		position: relative;
-		top: 20%;
+		margin-top: 20%;
 		color: white;
 		width:80%;
 		left:0;
@@ -96,5 +94,26 @@
 	  .alarm{
 	    background-image: url("../assets/images/alarm.png");
 	  }
-
+	@media screen and (max-width: 1152px) {
+	.service{	
+		width: 300px;
+		height: 300px;
+	}   
+	}
+	@media screen and (max-width: 713px) {
+	.service{	
+		width: 100%;
+		height: 350px;		
+	}   
+	}
+	@media screen and (max-width: 390px) {
+		.icon{
+	 		height: 80px;
+		    width: 80px;
+		}  
+		.service{	
+			width: 100%;
+			height: 300px;		
+		} 
+	}
 </style>

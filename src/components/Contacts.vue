@@ -19,7 +19,6 @@
 		</small>
 	</div>
 	</div>
-	<br />
 	<div class="contacts">
 		<ContactForm></ContactForm>
 		<div class="info">
@@ -86,6 +85,7 @@
 		vertical-align: top;
 		margin: 20px;
 	}
+
 	@media screen and (max-width: 915px) {
     	.info{
 			display:block;			
@@ -97,5 +97,13 @@
 		h3{
 			text-align:center;
 		}
+	}
+	@media screen and (max-width: 768px) {
+    	.block{
+			padding:0;			
+		}
+		.contacts{
+			margin:0;
+		}		
 	}
 </style>

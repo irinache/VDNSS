@@ -1,10 +1,12 @@
 <template>
    <div class="block welcome">
-    <h1>ВДНСС</h1>
+    <div class="content">
+      <h1>ВДНСС</h1>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <br>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
 
     <a href="#services" class="arrow">
     </a> 
@@ -21,19 +23,14 @@
 <style lang="scss"  scoped>
 @import "../assets/styles/index.scss";
 
-.block{
-  height: 730px;
-
+.content{
+  margin-top: 90px;
 }
-h1{
-  position:absolute;
-  top:27%;
+h1{ 
   text-align: center;
   color: white;
   font-size: 40pt;
-  right:0;
-  left:0;
-  margin:auto;
+  margin-bottom: 70px;
   font-family: 'Roboto', serif;
 }
 h1:before, h1:after{
@@ -51,22 +48,18 @@ h1:before, h1:after{
   background-image: url("../assets/images/welcome_block_bg.png");
 }
 p{
-  position:relative;
-  top:43%;
   text-align: center;
   color:white;
-  margin:auto;
+  margin:auto;  
   width: 50%;
   font-family: 'Roboto', serif;
 }
 
 .arrow{
-  position:absolute;
+  display: block;
   opacity: 0.5;
-  bottom: 100px;
-  left:0;
-  right:0;
   margin:auto;
+  margin-top: 12%;
   width:50px;
   height:50px;
   background-image: url("../assets/images/down_arrow.png");
@@ -80,9 +73,35 @@ p{
 .arrow:not(:hover){
   transition: 0.5s;
 }
-@media screen and (max-width: 600px) {
-  .arrow{    
-    display:none;
+@media screen and (max-width: 770px) {
+  p{ 
+    width: 80%; 
   }
+}
+@media screen and (max-width: 580px) {
+  h1{
+    margin-top:5%;
+    margin-bottom:5%;
+  }
+  .content{
+    margin-top:30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1{
+    margin-top:8%;
+    margin-bottom:8%;
+    font-size: 30pt;
+  }
+  h1:before, h1:after{
+    content: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  h1{
+    margin-top:10%;
+    margin-bottom:10%;
+  }
+
 }
 </style>

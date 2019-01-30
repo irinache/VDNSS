@@ -130,8 +130,6 @@
       margin:auto;
       text-align:center;
       margin-bottom: 30px;
-      float: none;  //
-      margin-right: 0; //
     }
     .contact{
       margin:30px;
@@ -145,10 +143,29 @@
       display:inline;
     }
   }
-  @media screen and (max-width: 599px) {
-    .contact{     
+ 
+    @media screen and (max-width: 582px) {
+      .icon{
+        display:none;
+      }
+      .contact{
+        margin:0px;        
+      }
+      .contacts{
+        margin-bottom:20px;
+      }
+      .contacts_text{
+        display: inline-block;
+        vertical-align: middle;
+        color: black;
+        margin:20px;
+        font-family: 'Roboto', serif;
+      }
+       .social_networks{
       display:block;
-    }   
-  }
+      margin:0;
+      margin-top:20px;
+    }
+    }
    
 </style>

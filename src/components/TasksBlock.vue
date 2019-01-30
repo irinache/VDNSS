@@ -109,5 +109,19 @@
 		.list{
 			width: 100%;
 	  	}
+	  	ul{
+			padding: 0;
+			margin-right: 0;
+		}
+	}
+	@media screen and (max-width: 400px) {
+		li{
+			width:100%;
+		}
+		.check{
+			height: 50px;
+			width:50px;	
+			margin-right: 20px;		
+		}	
 	}
 </style>
