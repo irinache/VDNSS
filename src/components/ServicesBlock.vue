@@ -1,32 +1,32 @@
 <template>
 	<div class="block" id="services" >
 		<h2 class="center">НАШИ УСЛУГИ</h2>
-		<a href="#" class="service">
+		<router-link to="/video_monitoring" class="service">
 			<div class="icon video_monitoring"></div>
 			<h4>Системы<br>видеонаблюдения</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
-		</a>
-		<a href="#" class="service">
+		</router-link>
+		<router-link to="/access_control" class="service">
 			<div class="icon access_control"></div>
 			<h4>Системы контроля<br>доступа</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
-		</a>
+		</router-link>
 
-		<a href="#" class="service">
+		 <router-link to="/computer_networks" class="service">
 			<div class="icon computer_networks"></div>
 			<h4>Проектирование и монтаж<br>компьютерных сетей</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
-		</a>
-		<a href="#" class="service">
+		</router-link>
+		<router-link to="/intercom" class="service">
 			<div class="icon intercom"></div>
 			<h4>Домофонные<br>cистемы</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
-		</a>
-		<a href="#" class="service">
+		</router-link>
+		<router-link to="/alarm" class="service">
 			<div class="icon alarm"></div>
 			<h4>Пожарные и охранные<br>сигнализации</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
-		</a>
+		</router-link>
 	</div>
 </template>
 

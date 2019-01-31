@@ -22,8 +22,6 @@
 	.headline{		
 		height:100px;
 		vertical-align: middle;
-
-
 	}
 	h1{
 	  position:absolute;
@@ -62,21 +60,18 @@
 	@media screen and (max-width: 595px) {
 		h1{
 			top:35%;
-		}
-		
+		}		
 	}
 	@media screen and (max-width: 580px) {
 		h1{
 			top:30%;
-		}
-		
+		}		
 	}
 	@media screen and (max-width: 425px) {
 		h1{
 			font-size: 22pt;
 			top:30%;
-		}
-		
+		}		
 	}
 	
 </style>

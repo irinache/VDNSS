@@ -1,5 +1,5 @@
 <template>
-	<div class="block">
+	<div class="block" id="form">
 		<h2 class="center">ОСТАВИТЬ ЗАЯВКУ</h2>
 		<div class="contacts">
 			<ContactForm></ContactForm>

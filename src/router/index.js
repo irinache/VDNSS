@@ -42,5 +42,8 @@ export default new Router({
       name: 'Alarm',
       component: Alarm
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })
