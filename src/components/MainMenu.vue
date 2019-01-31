@@ -66,7 +66,7 @@
 
 menu{
   position: absolute;
-  top:45%;
+  top:47%;
   width: 94%;
   left: 0;
   right: 0;
@@ -141,7 +141,7 @@ menu{
   }
   @media screen and (max-width: 1100px) {
     menu{    
-      top:80%;
+      top:82%;
     }
   }
   @media screen and (max-width: 724px) {

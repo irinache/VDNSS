@@ -1,4 +1,4 @@
-module.exports = {
+/*module.exports = {
 
   configureWebpack: {
     devServer: {
@@ -6,4 +6,4 @@ module.exports = {
     }
   }
 
-};
+};*/
