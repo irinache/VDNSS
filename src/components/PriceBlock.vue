@@ -112,5 +112,12 @@
         height:100%;
         background-color:$darker_light_grey;
     }
+    @media screen and (max-width: 480px) {
+        .card{
+            width:100%;
+            margin:0;
+            margin-bottom: 20px;
+        }
+    }  
 	
 </style>

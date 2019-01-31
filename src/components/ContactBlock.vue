@@ -1,7 +1,9 @@
 <template>
 	<div class="block">
 		<h2 class="center">ОСТАВИТЬ ЗАЯВКУ</h2>
-		<ContactForm></ContactForm>
+		<div class="contacts">
+			<ContactForm></ContactForm>
+		</div>
 	</div>	
 </template>
 
@@ -16,4 +18,15 @@
 
 <style lang="scss"  scoped>
 	@import "../assets/styles/index.scss";	
+	.contacts{
+		width:100%;	
+  	}
+	@media screen and (max-width: 768px) {
+    	.block{
+			padding:0;			
+		}	
+		.contacts{
+			margin:0;
+		}			
+	}
 </style>

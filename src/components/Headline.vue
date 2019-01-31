@@ -30,7 +30,7 @@
 	  top:37%;
 	  text-align: center;
 	  color: white;
-	  font-size: 4vw;
+	  font-size: 40pt;
 	  right:0;
 	  left:0;
 	  margin:auto;
@@ -58,6 +58,25 @@
 	   	h1:before, h1:after{
 		  content: none;
 		}
+	}
+	@media screen and (max-width: 595px) {
+		h1{
+			top:35%;
+		}
+		
+	}
+	@media screen and (max-width: 580px) {
+		h1{
+			top:30%;
+		}
+		
+	}
+	@media screen and (max-width: 425px) {
+		h1{
+			font-size: 22pt;
+			top:30%;
+		}
+		
 	}
 	
 </style>

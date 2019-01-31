@@ -80,6 +80,7 @@
 		list-style: none;
 		display: inline-block;	
 		width: 50%;
+		vertical-align: top;
 	}
 	.check{
 		height: 40px;
