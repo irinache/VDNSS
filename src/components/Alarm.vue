@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Headline type="alarm">Пожарные сигнализации</Headline>
+		<Headline type="alarm">Пожарные и охранные сигнализации</Headline>
 		<ServiceInfo type="alarm"></ServiceInfo>
 		<PriceList></PriceList>
 		<ContactBlock></ContactBlock>

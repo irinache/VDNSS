@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Headline type="computer_networks">Монтаж компьютерных сетей</Headline>
+		<Headline type="computer_networks">Проектирование и монтаж компьютерных сетей</Headline>
 		<ServiceInfo type="computer_networks"></ServiceInfo>
 		<PriceList></PriceList>
 		<ContactBlock></ContactBlock>

@@ -127,12 +127,13 @@
    @media screen and (max-width: 1277px) {
     .contacts{          
       display:block;
+      width:100%;
       margin:auto;
       text-align:center;
       margin-bottom: 30px;
     }
     .contact{
-      margin:30px;
+      margin:0px;
     }
     #logo{
       margin:auto;
@@ -164,7 +165,7 @@
        .social_networks{
       display:block;
       margin:0;
-      margin-top:20px;
+      margin-top:30px;
     }
     }
    
