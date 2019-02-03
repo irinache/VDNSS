@@ -76,7 +76,7 @@
 		margin-top: 10px;
 		list-style: none;
 		display: inline-block;	
-		width: 50%;
+		width: 49%;
 		vertical-align: top;
 	}
 	.check{
@@ -94,6 +94,16 @@
 		display: inline-block;
 		vertical-align: middle;
 		font-family: 'Roboto', serif;
+	}
+	@media screen and (max-width: 1100px) {
+	   .check{
+	   		display:block;
+	   		margin:auto;
+	   }
+	   p{
+		   	display:block;
+		   	text-align:center
+	   }
 	}
 	@media screen and (max-width: 1075px) {
 	   .image{
@@ -119,16 +129,6 @@
 			width: 100%;
 			margin-left: 0px;
 	  	}
+	}
 
-	}
-	@media screen and (max-width: 550px) {
-	p{
-		display:block;
-		text-align:center;
-	}
-	.check{
-		display:block;
-		margin:auto;
-	}
-}
 </style>

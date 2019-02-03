@@ -67,7 +67,8 @@
     width: 50px;
     height: 50px;
     border: 1px solid $grey;
-    margin: 30px;    
+    margin: 29px;  
+    margin-top: 30px;   
     background-repeat: no-repeat;
     background-position: center;
     vertical-align: middle;

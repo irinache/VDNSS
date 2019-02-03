@@ -1,26 +1,24 @@
-<template>
-		
-		<form @submit = "checkForm"  method="post">
+<template>		
+		<form @submit = "checkForm">
 			<h3 class="left">Контактная форма</h3>
-			<p class="err" v-if="empty_FIO">{{err_msg_1}}</p>
-			<input v-model="FIO" type="text" placeholder="ФИО">
-			<p class="err" v-if="empty_phone_num">{{err_msg_2}}</p>
-			<input v-model="phone_num" type="text" placeholder="Номер телефона">
+			<p class="err" v-if="empty_name">{{err_msg_1}}</p>
+			<input v-model="name" type="text" placeholder="ФИО" id="name">
+			<p class="err" v-if="empty_phone">{{err_msg_2}}</p>
+			<input v-model="phone" type="text" placeholder="Номер телефона" id="phone">
 			<textarea v-model="comment" type="text" placeholder="Комментарий"></textarea> 
-			<input class="button" type="submit" value="Перезвоните мне">	
-		</form>
-		
+			<input class="button" id="ajaxSubmit" type="submit" value="Перезвоните мне">	
+		</form>		
 </template>
 
 <script> 
 	export default {
 		data(){
 	  		return{
-	  			FIO: null,
-	  			empty_FIO: false,
+	  			name: null,
+	  			empty_name: false,
 	  			err_msg_1: "Требуется указать ФИО.",
-		  		phone_num: null,
-		  		empty_phone_num: false,
+		  		phone: null,
+		  		empty_phone: false,
 		  		err_msg_2: "Требуется указать номер телефона.",
 		  		comment: null,	  		
 	  		}  		
@@ -30,29 +28,51 @@
 	  			alert("checking...");
 	  		},
 	  		checkForm(e) {
-		      if (this.FIO && this.phone_num) {
-		        return true;
+		      if (this.name && this.phone) {
+		        jQuery(document).ready(function(){
+	            jQuery('#ajaxSubmit').click(function(e){
+	               e.preventDefault();
+	               $.ajaxSetup({
+	                  headers: {
+	                      'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+	                  }
+	              });
+	               jQuery.ajax({
+	                  url: "http://projects3.kozachenko.dp.ua/callme",
+	                  method: 'post',
+	                  data: {
+	                     name: jQuery('#name').val(),                    
+	                     phone: jQuery('#phone').val()
+	                  },
+	                  success: function(result){
+	                    alert(JSON.stringify(result));
+	                  }});
+	               });
+	            });
 		      }
 
 		      this.errors = [];
 
-		      if (!this.FIO) {	        
-		        this.empty_FIO = true;
+		      if (!this.name) {	        
+		        this.empty_name = true;
 
 		      }
-		      if (!this.phone_num) {	        
-		          this.empty_phone_num = true;
+		      if (!this.phone) {	        
+		          this.empty_phone = true;
 		      }
-		      if (this.FIO) {	        
-		        this.empty_FIO = false;
+		      if (this.name) {	        
+		        this.empty_name = false;
 		      }
-		      if (this.phone_num) {	        
-		        this.empty_phone_num = false;
+		      if (this.phone) {	        
+		        this.empty_phone = false;
 		      }
-			  e.preventDefault();
+			  e.preventDefault();			  
+
 		    },
 	  	}
     }
+
+     
 </script>
 
 <style lang="scss"  scoped>
