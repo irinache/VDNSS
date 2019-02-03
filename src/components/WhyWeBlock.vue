@@ -22,7 +22,7 @@
 					<div class="check">
 						
 					</div>
-					<p>Adipiscing elit, sed do</p>
+					<p>Adipiscing elit sed</p>
 				</li>
 				<li>
 					<div class="check">

@@ -45,6 +45,7 @@
 	                     phone: jQuery('#phone').val()
 	                  },
 	                  success: function(result){
+	                  	console.log(result);
 	                    alert(JSON.stringify(result));
 	                  }});
 	               });
