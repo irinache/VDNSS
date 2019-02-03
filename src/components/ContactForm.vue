@@ -24,51 +24,43 @@
 	  		}  		
 	  	},
 	  	methods:{
-	  		onCallBack(){
-	  			alert("checking...");
-	  		},
 	  		checkForm(e) {
-		      if (this.name && this.phone) {
-		        jQuery(document).ready(function(){
-	            jQuery('#ajaxSubmit').click(function(e){
-	               e.preventDefault();
-	               $.ajaxSetup({
-	                  headers: {
-	                      'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
-	                  }
-	              });
-	               jQuery.ajax({
-	                  url: "http://projects3.kozachenko.dp.ua/callme",
-	                  method: 'post',
-	                  data: {
-	                     name: jQuery('#name').val(),                    
-	                     phone: jQuery('#phone').val()
-	                  },
-	                  success: function(result){
-	                  	console.log(result);
-	                    alert(JSON.stringify(result));
-	                  }});
-	               });
-	            });
-		      }
+		    	if (this.name && this.phone) {		        
+	            	e.preventDefault();
+	            	$.ajaxSetup({
+	                	headers: {
+	                    	'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+	                	}
+	            	});
+	            	jQuery.ajax({
+	                	url: "http://projects3.kozachenko.dp.ua/callme",
+	                	method: 'post',
+	                	data: {
+	                    	name: jQuery('#name').val(),                    
+	                    	phone: jQuery('#phone').val()
+	                	},
+	                  	success: function(result){
+	                  		console.log(result);
+	                    	alert(JSON.stringify(result));
+	                  	}
+	                });
+		    	}
 
-		      this.errors = [];
+		    	this.errors = [];
 
-		      if (!this.name) {	        
-		        this.empty_name = true;
-
-		      }
-		      if (!this.phone) {	        
-		          this.empty_phone = true;
-		      }
-		      if (this.name) {	        
-		        this.empty_name = false;
-		      }
-		      if (this.phone) {	        
-		        this.empty_phone = false;
-		      }
-			  e.preventDefault();			  
-
+		    	if (!this.name) {	        
+		        	this.empty_name = true;
+		    	}
+		    	if (!this.phone) {	        
+		        	this.empty_phone = true;
+		    	}
+		    	if (this.name) {	        
+		    		this.empty_name = false;
+		    	}
+		    	if (this.phone) {	        
+		        	this.empty_phone = false;
+		    	}
+			  	e.preventDefault();		
 		    },
 	  	}
     }
