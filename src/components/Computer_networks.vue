@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="main">
 		<Headline type="computer_networks">Проектирование и монтаж компьютерных сетей</Headline>
 		<ServiceInfo type="computer_networks"></ServiceInfo>
 		<PriceList></PriceList>

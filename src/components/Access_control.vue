@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="main">
 		<Headline type="access_control">Системы контроля доступа</Headline>
 		<ServiceInfo type="access_control"></ServiceInfo>
 		<PriceList></PriceList>

@@ -41,7 +41,7 @@
     position: relative;
     width: 100%;
     background-color: white;
-    z-index: 1;
+    z-index: 21;
 
   }
   #logo{

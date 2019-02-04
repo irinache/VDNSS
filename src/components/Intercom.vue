@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="main">
 		<Headline type="intercom">Домофонные системы</Headline>
 		<ServiceInfo type="intercom"></ServiceInfo>
 		<PriceList></PriceList>

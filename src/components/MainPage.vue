@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="main">
 		<WelcomeBlock />	 
 	    <ServicesBlock />
 	    <StatisticsBlock />
@@ -34,3 +34,7 @@
     },
 	}
 </script>
+<style lang="scss"  scoped>
+	@import "../assets/styles/index.scss";
+	
+</style>

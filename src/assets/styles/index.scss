@@ -5,6 +5,11 @@ body, html{
 	padding: 0;
 }
 
+body.no-scroll {
+  //height: 100%;
+   overflow: hidden;
+}
+
 $grey: #b7b7b7;
 $light_grey: #f3f3f3;
 $darker_light_grey: #eeeeee;
@@ -93,6 +98,10 @@ h3.left:after{
 	background-color: $grey;
 	display: block;
 	margin-top: 10px;
+}
+.main{
+	position: relative;
+	z-index: 20;
 }
 
   @media screen and (max-width: 410px) {

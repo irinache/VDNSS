@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="main">
 		<Headline type="video_monitoring">Системы видеонаблюдения</Headline>
 		<ServiceInfo type="video_monitoring"></ServiceInfo>
 		<PriceList></PriceList>

@@ -7,11 +7,31 @@
 			<input v-model="phone" type="text" placeholder="Номер телефона" id="phone">
 			<textarea v-model="comment" type="text" placeholder="Комментарий"></textarea> 
 			<input class="button" id="ajaxSubmit" type="submit" value="Перезвоните мне">	
+			<Modal v-show="isSuccess" @close="closeScsModal">
+				<template slot="header">
+					Ваша заявка была успешно принята!
+				</template>
+				<template slot="body">
+					Ожидайте звонка от нашего оператора.
+				</template>
+			</Modal>
+			<Modal v-show="isError" @close="closeErrModal">
+				<template slot="header">
+					Ошибка!
+				</template>
+				<template slot="body">
+					Что-то пошло не так. Попробуйте еще раз.
+				</template>
+			</Modal>
 		</form>		
 </template>
 
 <script> 
+	import Modal from './Modal.vue';
 	export default {
+		components: {
+      		Modal
+    	},
 		data(){
 	  		return{
 	  			name: null,
@@ -20,11 +40,29 @@
 		  		phone: null,
 		  		empty_phone: false,
 		  		err_msg_2: "Требуется указать номер телефона.",
-		  		comment: null,	  		
+		  		comment: null,	 
+		  		isSuccess: false,
+		  		isError: false 		
 	  		}  		
 	  	},
 	  	methods:{
-	  		checkForm(e) {
+	  		showScsModal() {
+		        this.isSuccess = true;
+		        $("body").addClass("no-scroll");
+		    },
+		    showErrModal() {
+		        this.isError = true;
+		        $("body").addClass("no-scroll");
+		    },
+		    closeScsModal() {
+		        this.isSuccess = false;
+		        $("body").removeClass("no-scroll")
+		    },
+		    closeErrModal() {
+		        this.isError = false;
+		        $("body").removeClass("no-scroll")
+		    },
+	  		checkForm(e) {	  			
 		    	if (this.name && this.phone) {		        
 	            	e.preventDefault();
 	            	$.ajaxSetup({
@@ -41,9 +79,13 @@
 	                	},
 	                  	success: function(result){
 	                  		console.log(result);
-	                    	alert(JSON.stringify(result));
-	                  	}
-	                });
+	                    	this.showScsModal();	
+	                  	}.bind(this),
+	                  	error: function(jqXHR, textStatus, errorThrown ){
+	                  		console.log("err");	
+	                  		this.showErrModal();	        		
+	                  	}.bind(this)
+	                });	                
 		    	}
 
 		    	this.errors = [];

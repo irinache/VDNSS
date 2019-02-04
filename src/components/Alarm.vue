@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="main">
 		<Headline type="alarm">Пожарные и охранные сигнализации</Headline>
 		<ServiceInfo type="alarm"></ServiceInfo>
 		<PriceList></PriceList>

@@ -72,6 +72,7 @@ menu{
   right: 0;
   margin: auto;
   padding: 0 2%;
+ // z-index:30;
 }
   .dropdown-child{     
     display: flex;
