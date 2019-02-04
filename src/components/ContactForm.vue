@@ -5,7 +5,7 @@
 			<input v-model="name" type="text" placeholder="ФИО" id="name">
 			<p class="err" v-if="empty_phone">{{err_msg_2}}</p>
 			<input v-model="phone" type="text" placeholder="Номер телефона" id="phone">
-			<textarea v-model="comment" type="text" placeholder="Комментарий"></textarea> 
+			<textarea v-model="comment" type="text" placeholder="Комментарий" id="comment"></textarea> 
 			<input class="button" id="ajaxSubmit" type="submit" value="Перезвоните мне">	
 			<Modal v-show="isSuccess" @close="closeScsModal">
 				<template slot="header">
@@ -75,7 +75,8 @@
 	                	method: 'post',
 	                	data: {
 	                    	name: jQuery('#name').val(),                    
-	                    	phone: jQuery('#phone').val()
+	                    	phone: jQuery('#phone').val(),
+	                    	comment: jQuery('#comment').val()
 	                	},
 	                  	success: function(result){
 	                  		console.log(result);
