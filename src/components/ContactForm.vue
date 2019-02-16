@@ -1,10 +1,10 @@
 <template>		
 		<form @submit = "checkForm">
 			<h3 class="left">Контактная форма</h3>
-			<p class="err" v-if="empty_name">{{err_msg_1}}</p>
+			<p class="err" v-if="err_name">{{err_msg_1}}</p>
 			<input v-model="name" type="text" placeholder="ФИО" id="name">
-			<p class="err" v-if="empty_phone">{{err_msg_2}}</p>
-			<input v-model="phone" type="text" placeholder="Номер телефона" id="phone">
+			<p class="err" v-if="err_phone">{{err_msg_2}}</p>
+			<input v-model="phone" type="text" placeholder="+380670044030" id="phone">
 			<textarea v-model="comment" type="text" placeholder="Комментарий" id="comment"></textarea> 
 			<input class="button" id="ajaxSubmit" type="submit" value="Перезвоните мне">	
 			<Modal v-show="isSuccess" @close="closeScsModal">
@@ -35,11 +35,11 @@
 		data(){
 	  		return{
 	  			name: null,
-	  			empty_name: false,
-	  			err_msg_1: "Требуется указать ФИО.",
+	  			err_name: false,
+	  			err_msg_1: "Требуется указать ФИО",
 		  		phone: null,
-		  		empty_phone: false,
-		  		err_msg_2: "Требуется указать номер телефона.",
+		  		err_phone: false,
+		  		err_msg_2: "Требуется указать номер телефона",
 		  		comment: null,	 
 		  		isSuccess: false,
 		  		isError: false 		
@@ -62,8 +62,48 @@
 		        this.isError = false;
 		        $("body").removeClass("no-scroll")
 		    },
-	  		checkForm(e) {	  			
-		    	if (this.name && this.phone) {		        
+	  		checkForm(e) {	
+
+	  			// проверка на пустоту
+		    	if (!this.name) {	        
+		        	this.err_name = true;
+		        	this.err_msg_1="Требуется указать ФИО";
+		    	}
+
+		    	if (!this.phone) {	        
+		        	this.err_phone = true;
+		        	this.err_msg_2="Требуется указать номер телефона";
+		    	}
+
+		    	//проверка на соответсвие регэкспам
+	  			if(this.phone){	  				
+	  				var re = /^((\+38)?|38)0\d{9}$/;
+	  				if(re.test(this.phone)){
+	  					this.err_phone = false;
+	  					console.log("Номер телефона введен правильно!");	  					
+	  				}
+	  				else{
+	  					this.err_msg_2="Номер телефона введен неправильно. Введите номер в формате +380123456789";
+	  					this.err_phone = true;
+	  					//console.log("Номер телефона введен НЕправильно!");
+	  				}
+	  			}
+	  			if(this.name){
+	  				var re = /^[a-zа-я\s`]+$/i;
+	  				if(re.test(this.name)){
+	  					this.err_name = false;
+	  					console.log("Имя введено правильно!");
+	  				}
+	  				else{
+	  					this.err_msg_1="Имя введено неправильно";
+	  					this.err_name = true;
+	  					//console.log("Имя введено НЕправильно!");
+	  				}
+	  			}
+
+	  			// если все ок, отправка данных  			
+		    	if (this.name && this.phone && !this.err_name && !this.err_phone) {	
+		    		console.log("Отправка!");	        
 	            	e.preventDefault();
 	            	$.ajaxSetup({
 	                	headers: {
@@ -89,20 +129,6 @@
 	                });	                
 		    	}
 
-		    	this.errors = [];
-
-		    	if (!this.name) {	        
-		        	this.empty_name = true;
-		    	}
-		    	if (!this.phone) {	        
-		        	this.empty_phone = true;
-		    	}
-		    	if (this.name) {	        
-		    		this.empty_name = false;
-		    	}
-		    	if (this.phone) {	        
-		        	this.empty_phone = false;
-		    	}
 			  	e.preventDefault();		
 		    },
 	  	}
