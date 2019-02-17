@@ -111,7 +111,7 @@
 	                	}
 	            	});
 	            	jQuery.ajax({
-	                	url: "http://projects3.kozachenko.dp.ua/callme",
+	                	url: "http://vdnss.com.ua/callme",
 	                	method: 'post',
 	                	data: {
 	                    	name: jQuery('#name').val(),                    
