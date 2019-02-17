@@ -10,20 +10,20 @@
         </div>
         <p v-html="services.video_monitoring"></p>
       </router-link>
-      <router-link to="/access_control" class="menuitem">
-        <div class="icon access_control">  
+      <router-link to="/intercom" class="menuitem">
+        <div class="icon intercom">  
         </div>
-        <p v-html="services.access_control"></p>
-      </router-link>
+        <p v-html="services.intercom"></p>
+      </router-link>      
       <router-link to="/computer_networks" class="menuitem">
         <div class="icon computer_networks">  
         </div>
         <p v-html="services.computer_networks"></p>
       </router-link>
-      <router-link to="/intercom" class="menuitem">
-        <div class="icon intercom">  
+      <router-link to="/access_control" class="menuitem">
+        <div class="icon access_control">  
         </div>
-        <p v-html="services.intercom"></p>
+        <p v-html="services.access_control"></p>
       </router-link>
       <router-link to="/alarm" class="menuitem">
         <div class="icon alarm">  

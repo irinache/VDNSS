@@ -6,20 +6,19 @@
 			<h4>Системы<br>видеонаблюдения</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</router-link>
-		<router-link to="/access_control" class="service">
-			<div class="icon access_control"></div>
-			<h4>Системы контроля<br>доступа</h4>
+		<router-link to="/intercom" class="service">
+			<div class="icon intercom"></div>
+			<h4>Домофонные<br>cистемы</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</router-link>
-
-		 <router-link to="/computer_networks" class="service">
+		<router-link to="/computer_networks" class="service">
 			<div class="icon computer_networks"></div>
 			<h4>Проектирование и монтаж<br>компьютерных сетей</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</router-link>
-		<router-link to="/intercom" class="service">
-			<div class="icon intercom"></div>
-			<h4>Домофонные<br>cистемы</h4>
+		<router-link to="/access_control" class="service">
+			<div class="icon access_control"></div>
+			<h4>Системы контроля<br>доступа</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 		</router-link>
 		<router-link to="/alarm" class="service">
